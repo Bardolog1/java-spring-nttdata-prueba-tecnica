@@ -110,9 +110,9 @@ Actualiza información de un cliente.
 
 ### Respuestas
 
-- `200 OK` : Datos actualizados
-- `400 Bad Request`: Datos inválidos
-- `404 Not Found`: Cliente no existe
+- **200 OK**: Datos actualizados
+- **400 Bad Request**: Datos inválidos
+- **404 Not Found**: Cliente no existe
 
 ---
 
@@ -174,7 +174,7 @@ curl -X PUT -H "Content-Type: application/json" -d '{
 
 ## 📁 Datos Iniciales (data.sql)
 
-El archivo **`src/main/resources/data.sql`** contiene datos de prueba que se cargan automáticamente al iniciar la aplicación:
+El archivo *src/main/resources/data.sql* contiene datos de prueba que se cargan automáticamente al iniciar la aplicación:
 
 ```sql
   INSERT INTO cliente (primer_nombre, segundo_nombre, primer_apellido, segundo_apellido, numero_documento, 
@@ -230,7 +230,7 @@ logging.pattern.file=%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %m
 
 ## 📝 Licencia
     
-- Desarrollado por: Libardo Lozano Gambasica [Bardolog1](https://github.com/Bardolog1)
+- Desarrollado por: Libardo Lozano Gambasica [Bardolog1](https://githib.com/Bardolog1)
 - Licencia: [MIT](https://choosealicense.com/licenses/mit/)
 
 
