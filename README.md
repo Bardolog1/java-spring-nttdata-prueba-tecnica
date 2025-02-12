@@ -110,9 +110,9 @@ Actualiza información de un cliente.
 
 ### Respuestas
 
-- **200 OK**: Datos actualizados
-- **400 Bad Request**: Datos inválidos
-- **404 Not Found**: Cliente no existe
+- `200 OK` : Datos actualizados
+- `400 Bad Request`: Datos inválidos
+- `404 Not Found`: Cliente no existe
 
 ---
 
@@ -174,7 +174,7 @@ curl -X PUT -H "Content-Type: application/json" -d '{
 
 ## 📁 Datos Iniciales (data.sql)
 
-El archivo *src/main/resources/data.sql* contiene datos de prueba que se cargan automáticamente al iniciar la aplicación:
+El archivo **`src/main/resources/data.sql`** contiene datos de prueba que se cargan automáticamente al iniciar la aplicación:
 
 ```sql
   INSERT INTO cliente (primer_nombre, segundo_nombre, primer_apellido, segundo_apellido, numero_documento, 
