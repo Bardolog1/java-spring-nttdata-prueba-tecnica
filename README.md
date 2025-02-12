@@ -4,14 +4,14 @@
 
 ### Contenido
 1. [Descripción](#-descripción)
-2. [Tecnologías Utilizadas](#-tecnologías-utilizadas)
+2. [Tecnologías Utilizadas](#%EF%B8%8F-tecnologías-utilizadas)
 3. [Configuración del Proyecto](#-configuración-del-proyecto)
 4. [Documentación de la API con Swagger](#-documentación-de-la-api-con-swagger)
 5. [Endpoints](#-endpoints)
 6. [Ejemplos de Uso](#-ejemplos-de-uso)
 7. [Base de Datos H2 (en Memoria)](#-base-de-datos-h2-en-memoria)
-8. [Datos Iniciales (data.sql)](#-datos-iniciales-data-sql)
-9. [Configuración de la Aplicación (application.properties)](#-configuración-de-la-aplicación-application-properties)
+8. [Datos Iniciales (data.sql)](#-datos-iniciales-datasql)
+9. [Configuración de la Aplicación (application.properties)](#%EF%B8%8F-configuración-de-la-aplicación-applicationproperties)
 10. [Licencia](#-licencia)
 
 ---
