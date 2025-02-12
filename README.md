@@ -81,11 +81,11 @@ Consulta información de un cliente.
 
 **Parámetros:**
 
-| Parámetro         | Tipo     | Descripción                  | Valores Permitidos      |
-|-------------------|----------|------------------------------|-------------------------|
-| `tipoDocumento`   | Path     | Tipo de documento            | `C` (Cédula), `P` (Pasaporte) |
-| `numeroDocumento` | Path     | Número de documento          | String                  |
-| `withAddress`     | Query    | Incluir dirección en respuesta | `true`/`false`         |
+| Parámetro         | Tipo  | Descripción                    | Valores Permitidos            | Obligatorio |
+|-------------------|-------|--------------------------------|-------------------------------|-------------|
+| `tipoDocumento`   | Path  | Tipo de documento              | `C` (Cédula), `P` (Pasaporte) | Sí          |
+| `numeroDocumento` | Path  | Número de documento            | String                        | Sí          |
+| `withAddress`     | Query | Incluir dirección en respuesta | `true`/`false`                | No          |
 
 **Respuestas:**
 - `200 OK`: Datos del cliente
@@ -97,6 +97,13 @@ Consulta información de un cliente.
 
 ### PUT `/api/clientes/{tipoDocumento}/{numeroDocumento}`
 Actualiza información de un cliente.
+
+**Parámetros:**
+
+| Parámetro         | Tipo | Descripción         | Valores Permitidos            | Obligatorio |
+|-------------------|------|---------------------|-------------------------------|-------------|
+| `tipoDocumento`   | Path | Tipo de documento   | `C` (Cédula), `P` (Pasaporte) | Sí          |
+| `numeroDocumento` | Path | Número de documento | String                        | Sí          |
 
 **Body Request (JSON):**
 
@@ -110,9 +117,9 @@ Actualiza información de un cliente.
 
 ### Respuestas
 
-- **200 OK**: Datos actualizados
-- **400 Bad Request**: Datos inválidos
-- **404 Not Found**: Cliente no existe
+- `200 OK`: Datos actualizados
+- `400 Bad Request`: Datos inválidos
+- `404 Not Found`: Cliente no existe
 
 ---
 
@@ -174,7 +181,7 @@ curl -X PUT -H "Content-Type: application/json" -d '{
 
 ## 📁 Datos Iniciales (data.sql)
 
-El archivo *src/main/resources/data.sql* contiene datos de prueba que se cargan automáticamente al iniciar la aplicación:
+El archivo `src/main/resources/data.sql` contiene datos de prueba que se cargan automáticamente al iniciar la aplicación:
 
 ```sql
   INSERT INTO cliente (primer_nombre, segundo_nombre, primer_apellido, segundo_apellido, numero_documento, 
@@ -230,7 +237,7 @@ logging.pattern.file=%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %m
 
 ## 📝 Licencia
     
-- Desarrollado por: Libardo Lozano Gambasica [Bardolog1](https://githib.com/Bardolog1)
+- Desarrollado por: `Libardo Lozano Gambasica` [Bardolog1](https://githib.com/Bardolog1)
 - Licencia: [MIT](https://choosealicense.com/licenses/mit/)
 
 
