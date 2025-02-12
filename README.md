@@ -230,7 +230,7 @@ logging.pattern.file=%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %m
 
 ## 📝 Licencia
     
-- Desarrollado por: Libardo Lozano Gambasica [Bardolog1](https://githib.com/Bardolog1)
+- Desarrollado por: Libardo Lozano Gambasica [Bardolog1](https://github.com/Bardolog1)
 - Licencia: [MIT](https://choosealicense.com/licenses/mit/)
 
 
